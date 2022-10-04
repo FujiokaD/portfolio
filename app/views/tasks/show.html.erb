@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<h1>task</h1>
 
 <table>
   <thead>
@@ -14,14 +14,12 @@
   </thead>
 
   <tbody>
-    <% @titles.each do |task| %>
       <tr>
-        <td><%= task.title %></td>
-        <td><%= task.text %></td>
-        <td><%= task.start_time %></td>
-        <td><%= task.end_time %></td> 
+        <td><%= @task.title %></td>
+        <td><%= @task.text %></td>
+        <td><%= @task.start_time %></td>
+        <td><%= @task.end_time %></td> 
       </tr>
-    <% end %>
   </tbody>
 </table>
 
